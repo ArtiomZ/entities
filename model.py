@@ -21,11 +21,12 @@ class DbModel:
 
     def create_base_table_if_not_exists(self):
         """ If the tables doesn't exist yet, create it """
-        sql = '''CREATE TABLE IF NOT EXISTS entities (id INTEGER PRIMARY KEY AUTOINCREMENT, 
-                                                      entity,
-                                                      country,
-                                                      partner,
-                                                      parent);'''
+        sql = '''CREATE TABLE IF NOT EXISTS 
+                entities (id INTEGER PRIMARY KEY AUTOINCREMENT, 
+                entity,
+                country,
+                partner,
+                parent);'''
         self.cur = self.connection.cursor()
         self.cur.execute(sql)
         self.connection.commit()

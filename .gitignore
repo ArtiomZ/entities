@@ -1,4 +1,4 @@
-archive/*
-__pycache__/*
+archive/
+__pycache__/
 my_test.db
 import_tables.py

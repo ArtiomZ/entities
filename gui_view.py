@@ -65,12 +65,10 @@ class TableLayer(UserInterface):
     def reset_widgets(self):
 
         """ Remove all widgets and go back to the first page """
-
         for widget in self.winfo_children():
-
             widget.destroy()
-
         self.update()
+
 
 class EntityLayer(UserInterface):
     """ Layer to load entities to the db """
